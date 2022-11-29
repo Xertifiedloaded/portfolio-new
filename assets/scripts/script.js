@@ -4,10 +4,11 @@ window.addEventListener("scroll",()=>{
     if(window.scrollY>50){
  
     logo.innerHTML = "Oreofe"
-    header.style.background = "none"
+    // header.style.background = "yellow"
+    logo.style.color = "black"
     }else{
-      
+        // header.style.background = "none"
         logo.innerHTML = "Olaitan"
-        header.style.background = "yellow"
+      logo.style.color = "white"
     }
 })
