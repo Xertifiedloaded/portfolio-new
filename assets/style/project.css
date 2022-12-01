@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --color-deep-blue: #002057;
+    --color-orange: #ff7b00;
+    --color-royal-blue: #2506ad;
+    --color-light-pink: rgb(115, 3, 167);
+    --color-light-green: rgb(34, 109, 0);
+    --color-light-yellow: rgb(255, 230, 0);
+    --color-dark-white: rgb(255, 255, 255);
+    --color-light-blue: rgb(0, 217, 255);
+    --background-color: #e5ecfb;
+    --color-green: rgb(34, 109, 0);
+    --social-background: rgba(160, 36, 243, 0.3);
+    --skills-bg: linear-gradient(rgb(87, 5, 158), rgb(74, 0, 224));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .2s linear;
+    text-transform: capitalize;
+
+}
+
+body {
+    background: linear-gradient(90deg, #4831d4 67%, #ccf381 33%);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.active-header {
+    /* background-color: white;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 30%); */
+}
+
+.header-flex {
+
+    width: 100%;
+    /* margin: 0 auto; */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mobile {
+    display: none;
+}
+
+.logo {
+    width: 50%;
+}
+
+.nav {
+    width: 50%;
+
+}
+
+.nav-menu-icon {
+    display: none;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hamburger {
+    font-size: 20px;
+}
+
+.nav>.nav-menu {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+ul {
+    list-style: none;
+}
+
+.col {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+    column-gap: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.row {
+    width: 30%;
+
+}
+
+.row:hover .link-code {
+
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    margin: 0 auto;
+    height: 100%;
+    column-gap: 50px;
+    align-items: center;
+    background-color: var(--social-background);
+}
+
+.row>.bg-item {
+
+    width: 95%;
+    height: 300px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.link-code {
+    display: none;
+    justify-content: space-between;
+    width: 99%;
+    margin: 0 auto;
+    height: 100%;
+    column-gap: 50px;
+    align-items: center;
+    background-color: var(--social-background);
+}
+
+.link-code:hover {
+    display: flex;
+}
+
+.project-btn {
+
+    padding: 10px 30px;
+    border: none;
+    background-color: var(--color-light-yellow);
+    color: #2506ad;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.one {
+    background-image: url(/assets/images/cttaste.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.two {
+    background-image: url(/assets/images/huntr.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.three {
+    background-image: url(/assets/images/samsung.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.four {
+    background-image: url(/assets/images/bitcoin.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.five {
+    background-image: url(/assets/images/sendna.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.six {
+    background-image: url(/assets/images/validator.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.seven {
+    background-image: url(/assets/images/validator.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.eight {
+    background-image: url(/assets/images/tsf.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nine {
+    background-image: url(/assets/images/shushi-food.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ten {
+    background-image: url(/assets/images/composey.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.homepage {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.home-btn {
+    padding: 15px 70px;
+    border-radius: 5px;
+    background: #2506ad;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.back {
+    color: white;
+    font-size: 17px;
+}
+
+@media screen and (max-width:600px) {
+
+    .col {
+        display: block;
+    }
+
+    .row {
+        width: 100%;
+        margin: 10px 0;
+        border: 1px solid rgba(255, 248, 220, 0.254);
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+
+    .header {
+        width: 100%;
+        position: fixed;
+        background-color: blue;
+    }
+
+    .nav-list {
+        padding-bottom: 25px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .mobile>.hamburger{
+        display: flex;
+        justify-content: end;
+    }
+    .mobile-nav{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background: red;
+        left: 0;
+    }
+    .nav-menu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-link{
+        padding-bottom: 20px;
+    }
+}

@@ -23,10 +23,45 @@
                             </div>
                             <div class="nav">
                                 <span class="hamburger"> <i class="fa-solid fa-bars"></i></span>
+                                <span class="hamburger"> <i class="fa-solid fa-equals"></i></span>
+                                <div class="desktop hide">
+                                    <div class="desktop-nav">
+                                        <div class="container-nav">
+                                            <i class="fa-solid fa-xmark"></i>
+                                            <ul class="nav-menu">
+                                                <li class="nav-list desktop-list link "><a class="work-anchor"
+                                                        href="project.html">my work</a></li>
+                                                <li class="nav-list desktop-list link">my shelf</li>
+                                                <li class="nav-list desktop-list link">My Résumé</li>
+                                            </ul>
+                                            <ul class="nav-menu">
+                                                <li class="hello">say hello</li>
+                                                <li class="nav-list desktop-list">certifiedloaded@yahoo.com</li>
+                                                <li class="nav-list desktop-list">@xertifiedloaded</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile close">
+                                    <div class="desktop-nav">
+                                        <div class="container-nav">
+                                            <i class="fa-solid fa-not-equal"></i>
+                                            <ul class="nav-menu">
+                                                <li class="nav-list mobile-nav">my work</li>
+                                                <li class="nav-list mobile-nav">my shelf</li>
+                                                <li class="nav-list mobile-nav">My Résumé</li>
+                                            </ul>
+                                            <ul class="nav-menu">
+                                                <li class="hello">say hello</li>
+                                                <li class="nav-list">certifiedloaded@yahoo.com</li>
+                                                <li class="nav-list">@xertifiedloaded</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="inner-content">
                     <div class="primary">
@@ -153,7 +188,7 @@
                                     <h2 class="build">i build & <br> design stuff</h2>
                                     <p class="web">open source web app and experiment</p>
                                     <div class="article-btn">
-                                        <button class="article-button">see my work <i
+                                        <button  class="article-button">see my work <i
                                                 class="fa-solid fa-arrow-right"></i></button>
                                     </div>
                                 </div>
@@ -191,17 +226,17 @@
                         <div class="container">
                             <div class="input-container">
                                 <div class="input-output">
-                                    <label class="label" for="name">your Name</label>
-                                    <input class="input" type="text" placeholder="enter your name">
+                                    <label class="label label1" for="name">your Name</label>
+                                    <input class="input nameinput" type="text" placeholder="enter your name">
                                 </div>
                                 <div class="input-output">
-                                    <label class="label" for="email">your email</label>
-                                    <input class="input" type="text" placeholder="enter your email">
+                                    <label class="label label2" for="email">your email</label>
+                                    <input class="input mailinput" type="text" placeholder="enter your email">
                                 </div>
                             </div>
                             <div class="input-output">
-                                <label class="label" for="email">your message</label>
-                                <input class="input" type="text"
+                                <label class="label label3" for="email">your message</label>
+                                <input class="input msg" type="text"
                                     placeholder="Hi, i think we need a web design at company X. how soon can you hop on  to discus this?">
                             </div>
                             <div class="form-btn-container">
@@ -220,14 +255,19 @@
                         <div class="footer-container">
                             <ul class="footer-menu">
                                 <li class="hello">say hello</li>
-                                <li class="footer-item"><a class="anchor" href="">certifiedloaded@yahoo.com</a></li>
-                                <li class="footer-item"><a a class="anchor" href="">@xertifiedloaded</a></li>
-                                <li class="footer-item"><a a class="anchor" href="">+2348050726434</a></li>
+                                <li class="footer-item footer-nav"><a class="anchor"
+                                        href="">certifiedloaded@yahoo.com</a></li>
+                                <li class="footer-item footer-nav"><a a class="anchor" href="">@xertifiedloaded</a></li>
+                                <li class="footer-item footer-nav"><a a class="anchor" href="">+2348050726434</a></li>
                             </ul>
                             <ul class="footer-menu others">
-                                <li class="footer-item">my work</li>
+                                <li class="footer-item new-link">
+                                    <a class="work-anchor1">my work</a>
+                                </li>
                                 <li class="footer-item">my shelf</li>
-                                <li class="footer-item">My Résumé</li>
+                                <li class="footer-item "><a class="footer-item"
+                                        href="https://drive.google.com/file/d/1ndRKT3P6Iu2zVa-8QE0dQQx4h6W1fzaV/view?usp=share_link">My
+                                        Résumé</a> </li>
                             </ul>
                         </div>
                         <hr>
@@ -252,6 +292,7 @@
     <script src="assets/scripts/script.js">
 
     </script>
+    <script src="assets/scripts/app.js"></script>
 </body>
 
 </html>
