@@ -1,33 +1,39 @@
-let solid = document.querySelector(".fa-solid")
-let hamburger = document.querySelector("hamburger")
-let hide = document.querySelector(".hide")
-let isActive = false;
-function showNav(){
-    if(isActive==false){
 
-    }
-}
-
-let nav = document.querySelectorAll(".nav-link")
-let header = document.querySelector(".header")
-let logo = document.querySelector(".logo")
-window.addEventListener("scroll", () => {
-    console.log(window.scrollY)
-    if (window.scrollY >= 50) {
-        header.classList.add("active-header")
-        logo.style.color="black"
-        nav.forEach(navLink => {
-            navLink.style.color = "black"
-            navLink.style.fontWeight = "500"
-        })
-        console.log("y")
-    }
-    else {
-        logo.style.color="white"
-        header.classList.remove("active-header")
-        nav.forEach(navLink => {
-            navLink.style.color = "white"
-        })
-        console.log("x")
+let navBurger = document.querySelector(".nav-burger")
+let isOnline = false;
+let removeShow = document.querySelector(".hide")
+let body = document.querySelector("body")
+navBurger.addEventListener("click", () => {
+    if (isOnline == false) {
+        isOnline = true;
+        removeShow.classList.add("show")
+        body.style.overflowY = "hidden"
+    } else {
+        isOnline = false
+        removeShow.classList.remove("show")
+        body.style.overflowY = "scroll"
     }
 })
+let navLink = document.querySelectorAll(".link")
+// console.log(navLink)
+navLink.forEach((link) => {
+    link.addEventListener("click", () => {
+        navLink.forEach((e) => {
+            e.classList.remove("activeNav")
+        })
+        link.classList.add("activeNav")
+    })
+})
+
+
+    let clickBox = document.querySelectorAll(".row")
+    clickBox.forEach(scale=>{
+        scale.addEventListener("mouseenter",()=>{
+               scale.style.transform = 'perspective(2,1)'
+        })
+    })
+    // console.log(clickBox)
+   
+    // clickBox.addEventListener("mouseleave", () => {
+    
+    // })
