@@ -26,14 +26,12 @@ navLink.forEach((link) => {
 })
 
 
-    let clickBox = document.querySelectorAll(".row")
-    clickBox.forEach(scale=>{
-        scale.addEventListener("mouseenter",()=>{
-               scale.style.transform = 'perspective(2,1)'
-        })
-    })
-    // console.log(clickBox)
-   
-    // clickBox.addEventListener("mouseleave", () => {
-    
-    // })
+
+let myHeader = document.querySelector(".header")
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50){
+        myHeader.classList.add("active-header")
+    }else{
+        myHeader.classList.remove("active-header")
+    }
+})

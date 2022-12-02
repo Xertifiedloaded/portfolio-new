@@ -275,7 +275,15 @@ a {
     color: white;
     font-size: 17px;
 }
-
+@media screen and (max-width:900px) {
+    .row{
+        width: 100%;
+        flex-direction: column;
+    }
+    .col{
+        flex-direction: column;
+    }
+}
 @media screen and (max-width:600px) {
 
     .col {

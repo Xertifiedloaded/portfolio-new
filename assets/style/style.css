@@ -528,7 +528,42 @@ a {
 
 
 
-
+@media screen and (max-width:900px) {
+.row{
+    display: block;
+}
+.col1,.col2{
+    width: 100%;
+}
+.social-menu{
+    color: white;
+    font-size: 25px;
+}
+.col2{
+    margin-top: 50px;
+}
+.svg1{
+    display: none;
+}
+.frontend{
+    color: #ff7b00;
+}
+.new-section{
+    /* height: 100%;  */
+     padding: 100px 0;}
+.section{
+    /* height: 100%; */
+    padding: 100px 0;
+}
+.contact-us{
+    /* height: 100%; */
+    padding: 100px 0;
+}
+.desktop-nav{
+    width: 60%;
+    right: 10px;
+}
+}
 
 
 
@@ -540,7 +575,11 @@ a {
         height: 300px;
 
     }
-
+.social-menu{
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: center;
+}
     .row {
         display: block;
         width: 100%;
