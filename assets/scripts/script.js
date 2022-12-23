@@ -69,9 +69,16 @@ mobileNav.forEach((list) => {
 // toggle
 let newLink = document.querySelector(".new-link")
 newLink.addEventListener("click", () => {
-    let work = document.querySelector(".work-anchor1").href ="project.html"
+    let work = document.querySelector(".work-anchor1").href = "project.html"
     work.classList.toggle("work")
 })
 
 
 
+// form validation
+let form = document.querySelector(".form")
+let inputs = document.querySelectorAll(".form")
+form.addEventListener("click", (e) => {
+    e.preventDefault()
+    window.open('mailto:certifiedloaded@yahoo.com')
+})

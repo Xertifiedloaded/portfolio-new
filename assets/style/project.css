@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 
 :root {
     --color-deep-blue: #002057;
@@ -26,7 +27,7 @@
 body {
     background: linear-gradient(90deg, #4831d4 67%, #ccf381 33%);
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .container {
@@ -132,17 +133,21 @@ ul {
 .btn {
     padding: 5px 35px;
 }
-.nav-resume{
- color: red;
+
+.nav-resume {
+    color: red;
 }
+
 .project-button {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
+
 .info {
     text-align: center;
 }
+
 .bg-item .project-info {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
     height: 200px;
@@ -255,6 +260,22 @@ ul {
     background-size: cover;
 }
 
+.eleven {
+    background-image: url(/assets/images/agrico.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.twelve {
+    background-image: url(/assets/images/connect.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .homepage {
     margin: 10px 0;
     text-align: center;
@@ -275,15 +296,18 @@ a {
     color: white;
     font-size: 17px;
 }
+
 @media screen and (max-width:900px) {
-    .row{
+    .row {
         width: 100%;
         flex-direction: column;
     }
-    .col{
+
+    .col {
         flex-direction: column;
     }
 }
+
 @media screen and (max-width:600px) {
 
     .col {

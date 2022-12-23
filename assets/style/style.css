@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
 :root {
     --color-deep-blue: #002057;
@@ -24,7 +24,7 @@ body {
     background: var(--background-color);
     color: black;
     /* background-color: black; */
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .new-section {
